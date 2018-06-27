@@ -4,6 +4,7 @@
   height: 45px;
 }
 .container{
+  flex-flow: wrap;
   display: flex;
   justify-content: space-between;
   position: relative;
