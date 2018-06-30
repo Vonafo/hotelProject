@@ -1,4 +1,4 @@
-.navinformation {
+.nav-info {
   border-bottom: 1px solid rgba(215, 215, 215, 0.5);
   width: 100%;
   height: 45px;
@@ -11,32 +11,22 @@
   width: 1170px;
   margin:0 auto;
 }
-.navbar{
-  height: 85px;
-  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2);
-}
-.sticky {
-  z-index: 5;
-  background: #fff;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.leftsideinfo {
-  width: 50%;
-  float: left;
-  line-height: 45px;
-  font-size: 12px;
-    i{
-      color:#deaa86;
-      margin-right: 3px;
-    }
-    p {
-      display: inline-block;
-      margin-right: 40px;
-    }
-}
-.rightsideinfo{
+
+.nav-contacts{
+   width: 50%;
+   float: left;
+   line-height: 45px;
+   font-size: 12px;
+   i{
+     color:#deaa86;
+     margin-right: 3px;
+   }
+   p {
+     display: inline-block;
+     margin-right: 40px;
+   }
+ }
+.social-items{
   display: flex;
   flex-flow: row-reverse;
   width: 50%;
@@ -55,7 +45,7 @@
       color: #deaa86;
     }
 }
-.searchform{
+.search-form{
   line-height: 45px;
   position: relative;
     input[type='text']{
@@ -89,7 +79,18 @@
       cursor: pointer;
     }
 }
-.navbarlogo{
+.navbar{
+  height: 85px;
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2);
+}
+.sticky {
+  z-index: 5;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar-logo{
   height: 90px;
   position: absolute;
   left: 50%;
@@ -110,11 +111,11 @@
       letter-spacing: 6px;
     }
 }
-.leftlistmenu , .rightlistmenu{
+.nav-leftsubmenu , .nav-rightsubmenu{
     li{
       display: inline-block;
     }
-    li:hover .firstnesting{
+    li:hover .nav-leftsubmenu__link{
       color:#deaa86;
     }
     a {
@@ -128,15 +129,15 @@
       text-decoration: none;
     }
 }
-.rightlistmenu{
+.nav-rightsubmenu{
     a{
       padding: 35px 0 35px 30px;
     }
 }
-.dropdown{
+.nav-leftsubmenu__item__dropdown-menu{
   position: relative;
 }
-.variantroom {
+.nav-leftsubmenu__variantroom {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -147,7 +148,6 @@
       color: #deaa86;
     }
     li{
-
       width: 100%;
       padding: 15px;
       position: relative;
@@ -171,12 +171,12 @@
     }
 
 }
-.variantroom li:hover:after  {
+.nav-leftsubmenu__variantroom li:hover:after  {
   width:5px;
 }
-.variantroom li:hover{
+.nav-leftsubmenu__variantroom li:hover{
   padding-left: 20px;
 }
-.dropdown:hover .variantroom {
+.nav-leftsubmenu__item__dropdown-menu:hover  .nav-leftsubmenu__variantroom {
    display: block;
  }

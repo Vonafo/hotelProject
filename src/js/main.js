@@ -9,3 +9,10 @@ function myFunction() {
         navbar.classList.remove("sticky");
     }
 }
+
+$( function() {
+    $( "#reservation__check-in" ).datepicker({
+        altField: "#reservation__check-in",
+        altFormat: " d MM, yy"
+    });
+} );
