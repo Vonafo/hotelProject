@@ -17,8 +17,30 @@
     <section class="aviability">
         <div class="container">
             <form action="" class="reservetion-form">
-                <label for="reservation__check-in">ARRIVAL DATE</label>
-                <input type="text" id="reservation__check-in" value="1 January 2018">
+                <div class="arrivaldate">
+                    <label for="reservation__check-in">ARRIVAL DATE</label>
+                    <input type="text" id="reservation__check-in" value="1 January 2018">
+                </div>
+                <div class="departuredate">
+                    <label for="reservation__check-out">DEPARTURE DATE</label>
+                    <input type="text" id="reservation__check-out" value="31 January 2018">
+                </div>
+                <div class="adult">
+                    <label for="adults">Adults</label>
+                    <select id="adults" >
+                        <option value="1 Adult">1 Adult</option>
+                        <option value="2 Adult">2 Adult</option>
+                        <option value="3 Adult">3 Adult</option>
+                    </select>
+                </div>
+                <div class="child">
+                    <label for="children">Children</label>
+                    <select id="children" >
+                        <option value="none">None</option>
+                        <option value="1 Children">1 Children</option>
+                        <option value="2 Children">2 Children</option>
+                    </select>
+                </div>
             </form>
         </div>
     </section>
@@ -180,6 +202,11 @@
             </div>
             <div class="contactform">
                 <p class="subtitle">GET IN TOUCH</p>
+                <form action="" class="feedbackform">
+                    <input type="email" name="email"  placeholder="Enter your email address">
+                    <input type="text" name="name"   placeholder="Enter your name">
+                    <textarea name="message" rows="6" placeholder="Enter your message"></textarea>
+                </form>
             </div>
         </div>
     </section>

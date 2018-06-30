@@ -7,7 +7,7 @@
 }
 .footerlinks ,
 .footersubscription {
-  width: 30%;
+  width: 25%;
 }
 .footersubscription{
     h3 {
@@ -40,8 +40,44 @@
       }
 }
 .footerlogo{
-  width: 40%;
+  width: 50%;
+    h2{
+      font-size: 42px;
+      font-weight: 700;
+      text-align: center;
+      color: #fff;
+      margin-top: 0;
+    }
+    p{
+      text-align: center;
+      text-transform: uppercase;
+      color: #deaa86;
+      font-size: 14px;
+      letter-spacing: 10px;
+      margin-top: -5px;
+    }
+    ul{
+      text-align: center;
+      margin-top: 40px;
+      padding: 0;
+    }
+      li{
+        display: inline-block;
+        padding: 0 25px;
+      }
+        a{
+          display: block;
+          font-size: 18px;
+          text-decoration: none;
+          color: #ffffff;
+          -webkit-transition: color 0.3s;
+          transition: color 0.3s;
+        }
+        a:hover{
+          color: #deaa86;
+        }
 }
+
 .footercopyright{
   width: 100%;
     hr{

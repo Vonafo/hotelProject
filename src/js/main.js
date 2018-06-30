@@ -16,3 +16,9 @@ $( function() {
         altFormat: " d MM, yy"
     });
 } );
+$( function() {
+    $( "#reservation__check-out" ).datepicker({
+        altField: "#reservation__check-out",
+        altFormat: " d MM, yy"
+    });
+} );
