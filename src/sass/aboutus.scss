@@ -1,0 +1,139 @@
+.homeaboutus{
+  height: calc(50vh - 130px);
+  background: url("../img/about_bg.jpg");
+  background-position: bottom;
+  h1{
+    width: 100%;
+    padding: 60px 0 0 60px;
+    margin: 0;
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+  }
+  p{
+    width: 100%;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 30px 0 0 60px;
+  }
+  ul{
+    width: 100%;
+    padding: 30px 0 0 60px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 4px;
+  }
+  li{
+    display: inline-block;
+    padding-right: 15px;
+  }
+  a{
+    color: #deaa86;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    text-decoration: none;
+  }
+}
+.ourstats{
+  width: 100%;
+  background: #374853;
+  padding: 80px 0;
+}
+.happyguests,
+.meals,
+.awards,
+.roomcount{
+  text-align: center;
+  width: 25%;
+    p{
+      font-size: 68px;
+      font-weight: 700;
+      margin-bottom: 0;
+      color: #deaa86;
+    }
+    h3{
+      padding-top: 15px;
+      color: #fff;
+      margin-top: 0;
+    }
+}
+.fullservices{
+  padding: 60px 0;
+}
+.mySlides {
+  display:none;
+}
+.autoslider{
+  margin: 0 auto;
+}
+.photoofserv{
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  width: 40%;
+    h2{
+      text-align: left;
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      color: #374853;
+    }
+      span{
+        color: #deaa86;;
+      }
+    p{
+      margin-bottom: 30px;
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+}
+.listofserv{
+  width: 60%;
+  display: flex;
+  flex-flow: wrap;
+
+}
+.listofserv__item{
+  padding-left: 60px;
+  width: 50%;
+    i{
+      font-size: 56px;
+      color: #deaa86;
+    }
+    h3{
+      padding: 15px 0;
+      color: #374853;
+      font-weight: 700;
+      margin-top: 0;
+      font-size: 24px;
+    }
+}
+.quote {
+  padding: 80px 0;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  background: #deaa86;
+    i{
+      width: 100%;
+      font-size: 65px;
+    }
+    p{
+      width: 100%;
+      font-size: 16px;
+      line-height: 1.8;
+      padding: 0 200px;
+      margin-top: 10px;
+    }
+    h3{
+      width: 100%;
+      padding-top: 20px;
+      color: #374853;
+      font-style: italic;
+      font-size: 16px;
+      font-weight: 700;
+    }
+}
