@@ -1,28 +1,2 @@
-function myFunction() {
-    window.pageYOffset >= sticky ? navbar.classList.add("sticky") : navbar.classList.remove("sticky")
-}
-
-window.onscroll = function () {
-    myFunction()
-};
-var navbar = document.querySelector(".navbar"), sticky = navbar.offsetTop;
-$(function () {
-    $("#reservation__check-in").datepicker({altField: "#reservation__check-in", altFormat: " d MM, yy"})
-}), $(function () {
-    $("#reservation__check-out").datepicker({altField: "#reservation__check-out", altFormat: " d MM, yy"})
-});
+function myFunction(){window.pageYOffset>=sticky?navbar.classList.add("sticky"):navbar.classList.remove("sticky")}function currentDiv(e){showDivs(slideId=e)}function showDivs(e){var s,t=document.getElementsByClassName("mySlider"),l=document.getElementsByClassName("badge");for(e>t.length&&(slideId=1),e<1&&(slideId=t.length),s=0;s<t.length;s++)t[s].style.display="none";for(s=0;s<l.length;s++)l[s].className=l[s].className.replace(" badge-white","");t[slideId-1].style.display=" block",l[slideId-1].className+=" badge-white"}function carousel(){var e,s=document.getElementsByClassName("mySlides");for(e=0;e<s.length;e++)s[e].style.display=" none";slideIndex++,slideIndex>s.length&&(slideIndex=1),s[slideIndex-1].style.display="block",setTimeout(carousel,2e3)}function showMenu(){"none"==showM.style.display?showM.style.display="block":showM.style.display="none"}window.onscroll=function(){myFunction()};var navbar=document.querySelector(".navbar"),sticky=navbar.offsetTop;$(function(){$("#reservation__check-in").datepicker({altField:"#reservation__check-in",altFormat:" d MM, yy"})}),$(function(){$("#reservation__check-out").datepicker({altField:"#reservation__check-out",altFormat:" d MM, yy"})});var slideId=1;try{showDivs(slideId)}catch(e){console.log(e)}try{carousel()}catch(e){console.log(e)}var slideIndex=1,showM=document.getElementById("toggle");showM.style.display="none";
 //# sourceMappingURL=../maps/main.js.map
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2000);
-}

@@ -1,0 +1,128 @@
+.text-header{
+  max-height: 300px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(215, 215, 215, 0.5);
+  padding: 0;
+      h1{
+        text-align: center;
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: #374853;
+      }
+}
+.room-detail{
+  width:60%;
+  background: #ffffff;
+  border: 1px solid rgba(215, 215, 215, 0.5);
+  margin: 30px 0;
+  padding: 40px;
+}
+.slider-navigation{
+  text-align: center;
+  padding-top: 20px;
+}
+.badge-slider{
+   img{
+     width: 100%;
+     height: auto;
+   }
+}
+.mySlider{
+  display: none;
+}
+.badge{
+  margin: 0 5px;
+  background: #D6D6D6;
+  height:13px;
+  width:13px;
+  padding:0;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+.badge-white{
+  border: 1px solid #ccc;
+  display: inline-block;
+  color: #000;
+  background-color: #869791;
+  height:13px;
+  width:13px;
+  padding:0;
+}
+
+.name-room-price{
+  border-top: 1px solid #deaa86;
+  border-bottom: 1px solid #deaa86;
+  padding: 15px 0;
+  margin: 30px 0;
+   h2{
+     display: inline-block;
+     color: #374853;
+     font-size: 24px;
+     font-weight: 700;
+     margin: 0;
+   }
+    p{
+      display: inline-block;
+      float: right;
+      font-weight: 700;
+      color: #deaa86;
+      margin: 0;
+    }
+      span{
+        font-size: 22px;
+      }
+}
+.textaboutroom{
+  line-height: 1.8em;
+  margin: 10px 0;
+}
+.sidebar{
+  width: 38%;
+}
+.sidebar-item{
+  padding: 40px;
+  margin: 30px 0;
+  background-color: #ffffff;
+  border: 1px solid rgba(215, 215, 215, 0.5);
+  margin-bottom: 40px;
+    figure{
+      margin-top: 25px;
+      width: 100%;
+    }
+      img{
+        width: 100%;
+        height: auto;
+      }
+      h3{
+        display: inline-block;
+        margin-top: 8px;
+        font-weight: 700;
+        font-size: 20px;
+        color: #374853;
+      }
+}
+.sidebar__price{
+  display: inline-block;
+  float: right;
+  color: #deaa86;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.sidebar__features{
+  margin-top:20px;
+  list-style: none;
+  padding-left: 0;
+    li{
+      padding: 15px 0;
+    }
+      i{
+        color: #deaa86;
+        padding-right: 20px;
+      }
+}

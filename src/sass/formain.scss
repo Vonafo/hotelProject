@@ -206,6 +206,17 @@
       margin-bottom: 25px;
       overflow: hidden;
     }
+    figure:hover figcaption{
+       height: 100%;
+       background-color: rgba(0, 0, 0, 0.6);
+      }
+    figure:hover h3{
+       padding-top: 150px;
+      }
+    figure:hover p ,
+    figure:hover a {
+       opacity: 1;
+      }
     figcaption{
       top:0;
       position: absolute;
@@ -252,17 +263,7 @@
       font-family: 'Montserrat', sans-serif;
     }
 }
-figure:hover figcaption{
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-figure:hover h3{
-  padding-top: 150px;
-}
-figure:hover p ,
-figure:hover a {
-  opacity: 1;
-}
+
 .services{
   width: 100%;
   min-height: 200px;

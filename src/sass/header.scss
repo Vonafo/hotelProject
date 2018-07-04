@@ -1,4 +1,4 @@
-.nav-info {
+nav-info {
   border-bottom: 1px solid rgba(215, 215, 215, 0.5);
   width: 100%;
   height: 45px;
@@ -65,7 +65,7 @@
     }
     button{
       outline: none;
-      background: #fff;
+      background: #ffffff;
       position: absolute;
       right: 2px;
       top: 13px;
@@ -85,7 +85,7 @@
 }
 .sticky {
   z-index: 5;
-  background: #fff;
+  background: #ffffff;
   position: fixed;
   top: 0;
   width: 100%;
@@ -180,3 +180,56 @@
 .nav-leftsubmenu__item__dropdown-menu:hover  .nav-leftsubmenu__variantroom {
    display: block;
  }
+.nav-mobile{
+  position: absolute;
+  right: 25px;
+  display: none;
+  cursor: pointer;
+    i{
+      font-size: 30px;
+      line-height: 85px;
+      color: #374853;
+    }
+}
+#toggle{
+  display: none;
+  z-index: 5;
+}
+.togglelist{
+  transition: all ease 0.3s;
+  z-index: 5;
+  width: 100%;
+  background: #f9f9f9;
+    .features{
+      background: #f9f9f9;
+      width: 48%;
+      margin: 0;
+        li{
+
+          border-bottom:none;
+          list-style: none;
+          background: #f9f9f9;
+        }
+        a:hover {
+          color:#deaa86;
+          padding-left: 25px;
+        }
+    }
+   ul{
+     vertical-align: top;
+   }
+      li{
+        padding-left: 25px;
+      }
+        a{
+           background: #f9f9f9;
+           padding: 10px 10px 10px 0;
+           height: 100%;
+           display: block;
+           width: 100%;
+           line-height: inherit;
+           transition: all ease 0.3s;
+           color:#374853;
+           text-decoration: none;
+       }
+}

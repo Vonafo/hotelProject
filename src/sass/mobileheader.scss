@@ -1,0 +1,27 @@
+@media screen and (max-width: 1024px){
+  .container{
+    width: auto;
+    padding: 0 20px ;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .navbar {
+        .container {
+          width: auto;
+          padding: 0 20px;
+          min-height: 85px;
+        }
+      }
+  .nav-leftsubmenu, .nav-rightsubmenu{
+    display: none;
+  }
+  .navbar-logo {
+    left: 25px;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  .nav-mobile{
+    display: block;
+  }
+}
