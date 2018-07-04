@@ -33,8 +33,13 @@
     flex-flow: wrap;
     justify-content: center;
   }
-  .social-items, .aboutpic, .room , .service , .arrivaldate, .departuredate, .adult , .child{
+  .social-items, .aboutpic, .room , .service , .arrivaldate, .departuredate, .adult , .child , .contactinfo , .contactform{
     width: 100%;
+  }
+  .contactinfo{
+    p{
+      font-size: 34px;
+    }
   }
   .abouttext{
     transform: translateY(-80px);
