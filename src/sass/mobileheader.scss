@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1170px){
   .container{
     width: auto;
     padding: 0 20px ;
@@ -23,5 +23,21 @@
   }
   .nav-mobile{
     display: block;
+  }
+}
+@media screen and (max-width: 768px){
+  .nav-contacts, .search-form{
+    display: none;
+  }
+  .allinfoaboutus{
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  .social-items, .aboutpic, .room , .service , .arrivaldate, .departuredate, .adult , .child{
+    width: 100%;
+  }
+  .abouttext{
+    transform: translateY(-80px);
+    width: 90%;
   }
 }
