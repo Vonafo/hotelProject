@@ -33,7 +33,7 @@
     flex-flow: wrap;
     justify-content: center;
   }
-  .social-items, .aboutpic, .room , .service , .arrivaldate, .departuredate, .adult , .child , .contactinfo , .contactform{
+  .social-items, .aboutpic, .room , .service , .arrivaldate, .departuredate, .adult , .child , .contactinfo , .contactform,.viewofroom{
     width: 100%;
   }
   .contactinfo{
@@ -41,15 +41,20 @@
       font-size: 34px;
     }
   }
-  .abouttext{
+  .typeofroom{
+    justify-content: center;
+  }
+  .abouttext , .infoaboutroom{
     transform: translateY(-80px);
     width: 90%;
   }
-  .footerlogo{
+  .footerlogo ,
+  .room-detail{
     width: 100%;
     order:1;
   }
-  .footerlinks{
+  .footerlinks,
+  .sidebar{
     width: 100%;
     order: 2;
   }
@@ -59,5 +64,13 @@
   }
   .footercopyright{
     order:4;
+  }
+  .subscribe {
+     input{
+       min-width:50%;
+     }
+  }
+  .subscribesubmit{
+    right: 50%;
   }
 }
