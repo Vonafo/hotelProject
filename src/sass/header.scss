@@ -4,6 +4,7 @@ nav-info {
   height: 45px;
 }
 .container{
+  position: relative;
   flex-flow: wrap;
   display: flex;
   justify-content: space-between;
@@ -11,7 +12,6 @@ nav-info {
   width: 1170px;
   margin:0 auto;
 }
-
 .nav-contacts{
    width: 50%;
    float: left;
@@ -80,6 +80,7 @@ nav-info {
     }
 }
 .navbar{
+  position: relative;
   height: 85px;
   box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2);
 }
@@ -89,6 +90,10 @@ nav-info {
   position: fixed;
   top: 0;
   width: 100%;
+}
+.navbar-logo:after{
+  content: "";
+  clear: both;
 }
 .navbar-logo{
   height: 90px;
@@ -194,42 +199,29 @@ nav-info {
 #toggle{
   display: none;
   z-index: 5;
-}
-.togglelist{
-  transition: all ease 0.3s;
-  z-index: 5;
+  position: absolute;
   width: 100%;
-  background: #f9f9f9;
-    .features{
-      background: #f9f9f9;
-      width: 48%;
-      margin: 0;
-        li{
-
-          border-bottom:none;
-          list-style: none;
-          background: #f9f9f9;
-        }
-        a:hover {
-          color:#deaa86;
-          padding-left: 25px;
-        }
-    }
-   ul{
-     vertical-align: top;
-   }
-      li{
-        padding-left: 25px;
-      }
-        a{
-           background: #f9f9f9;
-           padding: 10px 10px 10px 0;
-           height: 100%;
-           display: block;
-           width: 100%;
-           line-height: inherit;
-           transition: all ease 0.3s;
-           color:#374853;
-           text-decoration: none;
-       }
+}
+#toggleSub{
+  display: none;
+}
+.togglelist {
+  border-top: 1px solid #e9e9e9;
+  width: 100%;
+  z-index: 5;
+  background: #ffffff;
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-align: right;
+    padding: 10px 25px;
+    height: 100%;
+    display: block;
+    width: 100%;
+    line-height: inherit;
+    transition: all ease 0.3s;
+    color: #374853;
+    text-decoration: none;
+  }
 }

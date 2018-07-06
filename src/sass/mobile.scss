@@ -45,4 +45,19 @@
     transform: translateY(-80px);
     width: 90%;
   }
+  .footerlogo{
+    width: 100%;
+    order:1;
+  }
+  .footerlinks{
+    width: 100%;
+    order: 2;
+  }
+  .footersubscription{
+    width: 100%;
+    order: 3;
+  }
+  .footercopyright{
+    order:4;
+  }
 }

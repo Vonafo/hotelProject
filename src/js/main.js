@@ -74,6 +74,12 @@ function carousel() {
     setTimeout(carousel, 2000);
 }
 
+try{
+    showMenu();
+}
+catch (err_2) {
+    console.log(err_2);
+}
 var showM =  document.getElementById("toggle");
 showM.style.display = "none";
 function showMenu() {
@@ -84,4 +90,19 @@ function showMenu() {
         showM.style.display = "none";
     }
 }
-
+try{
+    showSubMenu();
+}
+catch (err_3) {
+    console.log(err_3);
+}
+var showsubMenu = document.getElementById("toggleSub");
+showsubMenu.style.display = "none";
+function showSubMenu() {
+    if (showsubMenu.style.display == "none") {
+        showsubMenu.style.display = "block";
+    }
+    else {
+        showsubMenu.style.display = "none";
+    }
+}

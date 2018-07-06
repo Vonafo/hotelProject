@@ -32,12 +32,11 @@
         </div>
     </div>
 </div>
-
 <div class="navbar">
     <div class="container">
         <div class="nav-leftsubmenu">
             <ul class="nav-leftsubmenu__items">
-                <li class="nav-leftsubmenu_item" ><a class="nav-leftsubmenu__link" href="">HOME</a></li>
+                <li class="nav-leftsubmenu_item" ><a class="nav-leftsubmenu__link" href="index.html">HOME</a></li>
                 <li class="nav-leftsubmenu_item" ><a class="nav-leftsubmenu__link" href="aboutus.html">ABOUT US</a></li>
                 <li class="nav-leftsubmenu__item__dropdown-menu">
                 <a class="nav-leftsubmenu__link" href="rooms.html">ROOMS</a>
@@ -63,32 +62,31 @@
         <div class="nav-mobile" >
             <i class="fas fa-bars" onclick="showMenu()"></i>
         </div>
-</div>
-    <div id ="toggle" class="container">
+
+    </div>
+    <div id ="toggle">
         <div class="togglelist">
-            <ul class="features">
+            <ul class="mobile-list">
                 <li>
-                    <a class="nav-leftsubmenu__link" href="">HOME</a>
+                    <a href="index.html">HOME</a>
                 </li>
                 <li>
-                    <a class="nav-leftsubmenu__link" href="aboutus.html">ABOUT US</a>
+                    <a href="aboutus.html">ABOUT US</a>
                 </li>
-                <li class="nav-leftsubmenu__item__dropdown-menu">
-                    <a  class="nav-leftsubmenu__link" href="rooms.html">ROOMS</a>
-                    <ul class="nav-leftsubmenu__variantroom">
+                <li>
+                    <a class="showsubmenu"  onclick="showSubMenu()" >ROOMS <i class="fas fa-chevron-down"></i></a>
+                    <ul id="toggleSub">
                         <li class="variantroom__item"><a class="variantroom__link" href="#">1<sup>st</sup> TYPE</a></li>
                         <li class="variantroom__item"><a class="variantroom__link" href="#">2<sup>nd</sup> TYPE</a></li>
                         <li class="variantroom__item"><a class="variantroom__link" href="#">3<sup>rd</sup> TYPE</a></li>
                         <li class="variantroom__item"><a class="variantroom__link" href="#">4<sup>th</sup> TYPE</a></li>
                     </ul>
                 </li>
-            </ul>
-            <ul class="features">
                 <li>
-                    <a class="nav-leftsubmenu__link" href="">CONTACTS</a>
+                    <a href="">RESERVATION</a>
                 </li>
                 <li>
-                    <a class="nav-leftsubmenu__link" href="">RESERVATION</a>
+                    <a href="">CONTACTS</a>
                 </li>
             </ul>
         </div>
