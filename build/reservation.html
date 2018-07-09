@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vonafo Hotel</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+<div class="nav-info">
+    <div class="container">
+        <div class="nav-contacts">
+            <p class="contacts__street"><i class="fas fa-map-marker-alt"></i>29 Land St, Lorem City, CA</p>
+            <p class="contacts__phone"><i class="fas fa-phone"></i>+96 885 1247</p>
+        </div>
+        <div class="social-items">
+            <form class="search-form">
+                <input class="search-form__input" type="text" placeholder="Search">
+                <button class="search=form__submit" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <ul class="social-icons__list">
+                <li class="social-media__item social-media__item_twiiter"><a href="https://twitter.com/vonafo"><i class="fab fa-twitter"></i></a></li>
+                <li class="social-media__item social-media__item_facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="social-media__item social-media__item_google"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="navbar">
+    <div class="container">
+        <div class="nav-leftsubmenu">
+            <ul class="nav-leftsubmenu__items">
+                <li class="nav-leftsubmenu_item" ><a class="nav-leftsubmenu__link" href="index.html">HOME</a></li>
+                <li class="nav-leftsubmenu_item" ><a class="nav-leftsubmenu__link" href="aboutus.html">ABOUT US</a></li>
+                <li class="nav-leftsubmenu__item__dropdown-menu">
+                <a class="nav-leftsubmenu__link" href="rooms.html">ROOMS</a>
+                    <ul class="nav-leftsubmenu__variantroom">
+                        <li class="variantroom__item"><a class="variantroom__link" href="#">1<sup>st</sup> TYPE</a></li>
+                        <li class="variantroom__item"><a class="variantroom__link" href="#">2<sup>nd</sup> TYPE</a></li>
+                        <li class="variantroom__item"><a class="variantroom__link" href="#">3<sup>rd</sup> TYPE</a></li>
+                        <li class="variantroom__item"><a class="variantroom__link" href="#">4<sup>th</sup> TYPE</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-logo">
+            <h3 class="navbar-logo__itemlogo">Vonafo Hotel</h3>
+            <p class="navbar-logo__itemlogo" >GRAND</p>
+        </div>
+        <div class="nav-rightsubmenu">
+            <ul class="nav-rightsubmenu__items">
+                <li class="nav-rightsubmenu__item"><a class="nav-leftsubmenu__link" href="">RESERVATION</a></li>
+                <li class="nav-rightsubmenu__item"><a class="nav-leftsubmenu__link" href="">CONTACTS</a></li>
+            </ul>
+        </div>
+        <div class="nav-mobile" >
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </div>
+
+    </div>
+    <div id ="toggle">
+        <div class="togglelist">
+            <ul class="mobile-list">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">ABOUT US</a>
+                </li>
+                <li>
+                    <a class="showsubmenu"  onclick="showSubMenu()" >ROOMS <i class="fas fa-chevron-down"></i></a>
+                    <ul id="toggleSub">
+                        <li class="variantroom__item"><a class="variantroom__link" href="#">1<sup>st</sup> TYPE</a></li>
+                        <li class="variantroom__item"><a class="variantroom__link" href="#">2<sup>nd</sup> TYPE</a></li>
+                        <li class="variantroom__item"><a class="variantroom__link" href="#">3<sup>rd</sup> TYPE</a></li>
+                        <li class="variantroom__item"><a class="variantroom__link" href="#">4<sup>th</sup> TYPE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">RESERVATION</a>
+                </li>
+                <li>
+                    <a href="">CONTACTS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="blue"></div>
+<div class="red"></div>
+<div class="yellow"></div>
+<div class="green"></div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="footerlinks">
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SUPPORT</a></li>
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="#">TERMS & CONDITIONS</a></li>
+            </ul>
+        </div>
+        <div class="footerlogo">
+            <h2 class="footer__logo">Vonafo Hotel</h2>
+            <p class="footer__sublogo">GRAND</p>
+            <ul class="socialicons">
+                <li><a href="https://twitter.com/vonafo"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            </ul>
+        </div>
+        <div class="footersubscription">
+            <h3>NEWSLETTER</h3>
+            <p>Subscribe to our email newsletter to receive updates and news</p>
+            <form class="subscribe">
+                <input type="text" placeholder="E-mail address">
+                <button class="subscribesubmit" type="submit"><i class="far fa-paper-plane"></i></button>
+            </form>
+        </div>
+        <div class="footercopyright">
+            <hr>
+            <p>© 2018 Vonafo Grand Hotel. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

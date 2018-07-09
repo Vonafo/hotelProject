@@ -23,6 +23,28 @@ $( function() {
     });
 } );
 
+function goToReserv() {
+    var adult = document.getElementById('adults').value;
+    var child = document.getElementById('children').value;
+    var res = parseInt(adult) + parseInt(child);
+    localStorage.setItem('quan', res);
+}
+
+
+document.addEventListener('DOMContentLoaded',function () {
+    switch (localStorage.getItem('quan')) {
+        case 1:
+            document.getElementsByClassName('blue')[0].style.display ="block";
+            document.getElementsByClassName('red').style.display = 'block';
+            document.getElementsByClassName('yellow').style.display = 'block';
+            document.getElementsByClassName('green').style.display = 'block';
+            break;
+    }
+},false);
+
+
+
+
 
 var slideId = 1;
 try{
