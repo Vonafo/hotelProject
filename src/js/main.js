@@ -31,16 +31,26 @@ function goToReserv() {
 }
 
 
-document.addEventListener('DOMContentLoaded',function () {
-    switch (localStorage.getItem('quan')) {
-        case 1:
+window.addEventListener('load',function toInvoke() {
+    if (localStorage.getItem('quan') == 1 ) {
             document.getElementsByClassName('blue')[0].style.display ="block";
-            document.getElementsByClassName('red').style.display = 'block';
-            document.getElementsByClassName('yellow').style.display = 'block';
-            document.getElementsByClassName('green').style.display = 'block';
-            break;
+            document.getElementsByClassName('red')[0].style.display = 'block';
+            document.getElementsByClassName('yellow')[0].style.display = 'block';
+            document.getElementsByClassName('green')[0].style.display = 'block';
     }
-},false);
+    else if(localStorage.getItem('quan') == 2){
+            document.getElementsByClassName('red')[0].style.display = 'block';
+            document.getElementsByClassName('yellow')[0].style.display = 'block';
+            document.getElementsByClassName('green')[0].style.display = 'block';
+    }
+    else if(localStorage.getItem('quan') == 3){
+            document.getElementsByClassName('yellow')[0].style.display = 'block';
+            document.getElementsByClassName('green')[0].style.display = 'block';
+    }
+    else {
+        document.getElementsByClassName('green')[0].style.display = 'block';
+    }
+    },false);
 
 
 
