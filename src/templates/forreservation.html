@@ -1,43 +1,52 @@
 <div class="container">
     <h2 class="title-for-rooms">select the room for your vacation</h2>
-    <div class="blue">
-    <input type="radio" id="single-room-1" name="room">
-    <label for="single-room-1">Single room</label>
-    <input type="radio" id="single-room-2" name="room">
-    <label for="single-room-2">Single room</label>
-    <input type="radio" id="single-room-3" name="room">
-    <label for="single-room-3">Single room</label>
-    <input type="radio" id="single-room-4" name="room">
-    <label for="single-room-4">Single room</label>
+    <div class="single-type-room">
+        <div class="universal-room" id="single-room-1">Single room</div>
+        <div class="universal-room" id="single-room-2">Single room</div>
+        <div class="universal-room" id="single-room-3">Single room</div>
+        <div class="universal-room" id="single-room-4">Single room</div>
     </div>
-    <div class="red">
-    <input type="radio" id="double-room-1" name="room">
-    <label for="double-room-1">Double room</label>
-    <input type="radio" id="double-room-2" name="room">
-    <label for="double-room-2">Double room</label>
-    <input type="radio" id="double-room-3" name="room">
-    <label for="double-room-3">Double room</label>
-    <input type="radio" id="double-room-4" name="room">
-    <label for="double-room-4">Double room</label>
+    <div class="double-type-room">
+        <div class="universal-room" id="double-room-1">Double room</div>
+        <div class="universal-room" id="double-room-2">Double room</div>
+        <div class="universal-room" id="double-room-3">Double room</div>
+        <div class="universal-room" id="double-room-4">Double room</div>
 </div>
-    <div class="yellow">
-    <input type="radio" id="deluxe-room-1" name="room">
-    <label for="deluxe-room-1">Deluxe room</label>
-    <input type="radio" id="deluxe-room-2" name="room">
-    <label for="deluxe-room-2">Deluxe room</label>
-    <input type="radio" id="deluxe-room-3" name="room">
-    <label for="deluxe-room-3">Deluxe room</label>
-    <input type="radio" id="deluxe-room-4" name="room">
-    <label for="deluxe-room-4">Deluxe room</label>
+    <div class="deluxe-type-room">
+        <div class="universal-room" id="deluxe-room-1">Deluxe room</div>
+        <div class="universal-room" id="deluxe-room-2">Deluxe room</div>
+        <div class="universal-room" id="deluxe-room-3">Deluxe room</div>
+        <div class="universal-room" id="deluxe-room-4">Deluxe room</div>
+
 </div>
-    <div class="green">
-    <input type="radio" id="royal-room-1" name="room">
-    <label for="royal-room-1">royal room</label>
-    <input type="radio" id="royal-room-2" name="room">
-    <label for="royal-room-2">royal room</label>
-    <input type="radio" id="royal-room-3" name="room">
-    <label for="royal-room-3">royal room</label>
-    <input type="radio" id="royal-room-4" name="room">
-    <label for="royal-room-4">royal room</label>
+    <div class="royal-type-room">
+        <div class="universal-room" id="royal-room-1">Royal room</div>
+        <div class="universal-room" id="royal-room-2">Royal room</div>
+        <div class="universal-room" id="royal-room-3">Royal room</div>
+        <div class="universal-room" id="royal-room-4">Royal room</div>
 </div>
+    <form class="booking-form" action="">
+                    <p class="name-of-selected-room"></p>
+        <input type="text" id="reservation__check-in" value="1 January 2018">
+        <input type="text" id="reservation__check-out" value="31 January 2018">
+        <select id="adults">
+            <option value="1">1 Adult</option>
+            <option value="2">2 Adult</option>
+            <option value="3">3 Adult</option>
+        </select>
+        <select id="children">
+            <option value="0">None</option>
+            <option value="1">1 Children</option>
+            <option value="2">2 Children</option>
+        </select>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Phone">
+        <textarea name="requirements" id="requirements" rows="8" placeholder="Special requirements"></textarea>
+
+        <a class="btn booking-btn" href="#" >book room</a>
+
+    </form>
+
 </div>

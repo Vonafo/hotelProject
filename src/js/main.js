@@ -33,22 +33,22 @@ function goToReserv() {
 
 window.addEventListener('load',function toInvoke() {
     if (localStorage.getItem('quan') == 1 ) {
-            document.getElementsByClassName('blue')[0].style.display ="block";
-            document.getElementsByClassName('red')[0].style.display = 'block';
-            document.getElementsByClassName('yellow')[0].style.display = 'block';
-            document.getElementsByClassName('green')[0].style.display = 'block';
+            document.getElementsByClassName('single-type-room')[0].style.display ="block";
+            document.getElementsByClassName('double-type-room')[0].style.display = 'block';
+            document.getElementsByClassName('deluxe-type-room')[0].style.display = 'block';
+            document.getElementsByClassName('royal-type-room')[0].style.display = 'block';
     }
     else if(localStorage.getItem('quan') == 2){
-            document.getElementsByClassName('red')[0].style.display = 'block';
-            document.getElementsByClassName('yellow')[0].style.display = 'block';
-            document.getElementsByClassName('green')[0].style.display = 'block';
+            document.getElementsByClassName('double-type-room')[0].style.display = 'block';
+            document.getElementsByClassName('deluxe-type-room')[0].style.display = 'block';
+            document.getElementsByClassName('royal-type-room')[0].style.display = 'block';
     }
     else if(localStorage.getItem('quan') == 3){
-            document.getElementsByClassName('yellow')[0].style.display = 'block';
-            document.getElementsByClassName('green')[0].style.display = 'block';
+            document.getElementsByClassName('deluxe-type-room')[0].style.display = 'block';
+            document.getElementsByClassName('royal-type-room')[0].style.display = 'block';
     }
     else {
-        document.getElementsByClassName('green')[0].style.display = 'block';
+        document.getElementsByClassName('royal-type-room')[0].style.display = 'block';
     }
     },false);
 
@@ -138,3 +138,16 @@ function showSubMenu() {
         showsubMenu.style.display = "none";
     }
 }
+
+
+var rooms = document.getElementsByClassName("universal-room");
+for (var i = 0; i < rooms.length; i++) {
+    var current = rooms[i];
+    current.addEventListener("click", function() {
+        document.getElementsByClassName("name-of-selected-room")[0].innerHTML = this.id;
+    });
+}
+
+
+var emptyArray = [];
+localStorage.setItem('arr', emptyArray);

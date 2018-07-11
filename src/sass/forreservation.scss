@@ -6,15 +6,16 @@
   text-align: center;
   width: 100%;
 }
-.blue, .red, .green, .yellow {
+.single-type-room,
+.double-type-room,
+.deluxe-type-room,
+.royal-type-room {
   width: 23%;
   margin: 5px;
   min-height: 100px;
   display:none;
   margin-bottom: 50px;
-      input[type='radio']{
-        display: none;
-       }
+
       label{
         text-transform: uppercase;
         text-align: center;
@@ -28,4 +29,43 @@
       input[type='radio']:checked + label{
         border-color: #374853;
       }
+}
+.universal-room{
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  margin-top: 25px;
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid #deaa86;
+  color: #374853;
+}
+.booking-btn{
+  color: #374853;
+  width: 50%;
+  order: 2;
+}
+.booking-btn:hover{
+  border-color: #374853;
+}
+.booking-form{
+  color: #374853;
+  padding-top: 50px;
+  margin: 25px 0;
+  border: 1px solid #deaa86;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  width: 100%;
+    input , select, textarea{
+      display: block;
+      width: 50%;
+      height: 38px;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      margin:10px;
+      color: #374853;
+    }
+
 }
