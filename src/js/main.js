@@ -139,15 +139,43 @@ function showSubMenu() {
     }
 }
 
-
+var arr = [];
 var rooms = document.getElementsByClassName("universal-room");
 for (var i = 0; i < rooms.length; i++) {
     var current = rooms[i];
-    current.addEventListener("click", function() {
-        document.getElementsByClassName("name-of-selected-room")[0].innerHTML = this.id;
+     current.addEventListener("click", function() {
+        this.style.borderColor = '#374853';
+        document.getElementsByClassName("name-of-selected-room")[0].value = this.textContent;
+        var roomId= document.getElementsByClassName("name-of-selected-room")[0] = this.id;
+        arr.push(roomId);
+        console.log(arr);
+
     });
 }
+function bookNow() {
+    localStorage.setItem('info', arr);
+}
+
+/*
+var formData = new FormData(document.forms.bookingform);
+
+ {
+    for (var key in formData){
+        arr.push(formData[key]);
+        localStorage.setItem('info', arr);
+    }
 
 
-var emptyArray = [];
-localStorage.setItem('arr', emptyArray);
+    alert(formData.get(arrivalDay));
+}
+*/
+
+
+
+
+
+
+
+
+
+

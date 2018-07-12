@@ -67,5 +67,14 @@
       margin:10px;
       color: #374853;
     }
+  .name-of-selected-room{
+    text-align: center;
+    font-size: 25px;
+    border: none;
+    outline: none;
+  }
+  input[type="text"]:disabled{
+    background-color: #ffffff;
+  }
 
 }
