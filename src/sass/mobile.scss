@@ -33,8 +33,22 @@
     flex-flow: wrap;
     justify-content: center;
   }
-  .social-items, .aboutpic, .room , .service , .arrivaldate, .departuredate, .adult , .child , .contactinfo , .contactform,.viewofroom{
+  .social-items, .aboutpic, .room , .service , .arrivaldate, .departuredate, .adult , .child , .contactinfo , .contactform,.viewofroom ,.photoofserv, .listofserv{
     width: 100%;
+  }
+  .photoofserv{
+    padding-left: 15px;
+  }
+  .awards, .happyguests, .meals, .roomcount{
+    width: 50%;
+    padding: 15px;
+  }
+  .photoofserv h2{
+    width: 100%;
+    text-align: center;
+  }
+  .listofserv__item{
+    padding-left: 15px;
   }
   .contactinfo{
     p{
@@ -72,5 +86,22 @@
   }
   .subscribesubmit{
     right: 50%;
+  }
+  .quote p{
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 490px){
+  .listofserv__item{
+    width: 100%;
+    text-align: center;
+  }
+  .awards, .happyguests, .meals, .roomcount{
+    width: 100%;
+    padding: 15px;
+  }
+  .room figure:hover h3{
+    padding-top: 15px;
   }
 }

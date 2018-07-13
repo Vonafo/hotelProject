@@ -23,34 +23,7 @@ $( function() {
     });
 } );
 
-function goToReserv() {
-    var adult = document.getElementById('adults').value;
-    var child = document.getElementById('children').value;
-    var res = parseInt(adult) + parseInt(child);
-    localStorage.setItem('quan', res);
-}
 
-
-window.addEventListener('load',function toInvoke() {
-    if (localStorage.getItem('quan') == 1 ) {
-            document.getElementsByClassName('single-type-room')[0].style.display ="block";
-            document.getElementsByClassName('double-type-room')[0].style.display = 'block';
-            document.getElementsByClassName('deluxe-type-room')[0].style.display = 'block';
-            document.getElementsByClassName('royal-type-room')[0].style.display = 'block';
-    }
-    else if(localStorage.getItem('quan') == 2){
-            document.getElementsByClassName('double-type-room')[0].style.display = 'block';
-            document.getElementsByClassName('deluxe-type-room')[0].style.display = 'block';
-            document.getElementsByClassName('royal-type-room')[0].style.display = 'block';
-    }
-    else if(localStorage.getItem('quan') == 3){
-            document.getElementsByClassName('deluxe-type-room')[0].style.display = 'block';
-            document.getElementsByClassName('royal-type-room')[0].style.display = 'block';
-    }
-    else {
-        document.getElementsByClassName('royal-type-room')[0].style.display = 'block';
-    }
-    },false);
 
 
 
@@ -139,36 +112,59 @@ function showSubMenu() {
     }
 }
 
+
+
+
+function goToReserv() {
+    var adult = document.getElementById('adults').value;
+    var child = document.getElementById('children').value;
+    var res = parseInt(adult) + parseInt(child);
+    localStorage.setItem('quan', res);
+}
+
+
+window.addEventListener('load',function toInvoke() {
+    if (localStorage.getItem('quan') == 1 ) {
+        document.getElementsByClassName('single-type-room')[0].style.display ="block";
+        document.getElementsByClassName('double-type-room')[0].style.display = 'block';
+        document.getElementsByClassName('deluxe-type-room')[0].style.display = 'block';
+        document.getElementsByClassName('royal-type-room')[0].style.display = 'block';
+    }
+    else if(localStorage.getItem('quan') == 2){
+        document.getElementsByClassName('double-type-room')[0].style.display = 'block';
+        document.getElementsByClassName('deluxe-type-room')[0].style.display = 'block';
+        document.getElementsByClassName('royal-type-room')[0].style.display = 'block';
+    }
+    else if(localStorage.getItem('quan') == 3){
+        document.getElementsByClassName('deluxe-type-room')[0].style.display = 'block';
+        document.getElementsByClassName('royal-type-room')[0].style.display = 'block';
+    }
+    else {
+        document.getElementsByClassName('royal-type-room')[0].style.display = 'block';
+    }
+},false);
+
+
 var arr = [];
 var rooms = document.getElementsByClassName("universal-room");
 for (var i = 0; i < rooms.length; i++) {
     var current = rooms[i];
-     current.addEventListener("click", function() {
+    current.addEventListener("click", function() {
         this.style.borderColor = '#374853';
         document.getElementsByClassName("name-of-selected-room")[0].value = this.textContent;
-        var roomId= document.getElementsByClassName("name-of-selected-room")[0] = this.id;
-        arr.push(roomId);
-        console.log(arr);
+        var roomId = document.getElementsByClassName("name-of-selected-room")[0] = this.id;
+        document.getElementsByClassName("name-of-selected-room")[0].id = roomId;
 
     });
 }
 function bookNow() {
+    var currentRoom = document.getElementsByClassName("name-of-selected-room")[0].id;
+    arr.push(currentRoom);
     localStorage.setItem('info', arr);
+    console.log(arr);
 }
-
-/*
-var formData = new FormData(document.forms.bookingform);
-
- {
-    for (var key in formData){
-        arr.push(formData[key]);
-        localStorage.setItem('info', arr);
-    }
-
-
-    alert(formData.get(arrivalDay));
-}
-*/
+/*window.addEventListener('load',function toBook() {
+ }*/
 
 
 
