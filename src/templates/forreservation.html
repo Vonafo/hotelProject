@@ -25,27 +25,27 @@
         <div class="universal-room" id="royal-room-3">Royal room</div>
         <div class="universal-room" id="royal-room-4">Royal room</div>
 </div>
-    <form class="booking-form" id='booking-form' name="bookingform" action="">
-        <input type="text" class="name-of-selected-room" name="nameOfRoom" disabled>
-        <input type="text"  name='arrivalDay' id="reservation__check-in" value="1 January 2018">
-        <input type="text" name = 'departure-day' id="reservation__check-out" value="31 January 2018">
-        <select name="quanAdult" id="adults">
+    <form class="booking-form" action="">
+                    <p class="name-of-selected-room"></p>
+        <input type="text" id="reservation__check-in" value="1 January 2018">
+        <input type="text" id="reservation__check-out" value="31 January 2018">
+        <select id="adults">
             <option value="1">1 Adult</option>
             <option value="2">2 Adult</option>
             <option value="3">3 Adult</option>
         </select>
-        <select name="quanChild" id="children">
+        <select id="children">
             <option value="0">None</option>
             <option value="1">1 Children</option>
             <option value="2">2 Children</option>
         </select>
-        <input name="first-name" type="text" placeholder="First Name">
-        <input name="last-name" type="text" placeholder="Last Name">
-        <input name="email" type="email" placeholder="Email">
-        <input name="phone" type="tel" placeholder="Phone">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Phone">
         <textarea name="requirements" id="requirements" rows="8" placeholder="Special requirements"></textarea>
 
-        <a class="btn booking-btn" href="#" onclick="bookNow()">book room</a>
+        <a class="btn booking-btn" href="#" >book room</a>
 
     </form>
 
