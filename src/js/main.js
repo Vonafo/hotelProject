@@ -111,10 +111,6 @@ function showSubMenu() {
         showsubMenu.style.display = "none";
     }
 }
-
-
-
-
 function goToReserv() {
     var adult = document.getElementById('adults').value;
     var child = document.getElementById('children').value;
@@ -146,11 +142,22 @@ window.addEventListener('load',function toInvoke() {
 
 
 var arr = [];
+var isActive = false;
+var prevElem;
 var rooms = document.getElementsByClassName("universal-room");
 for (var i = 0; i < rooms.length; i++) {
+
     var current = rooms[i];
     current.addEventListener("click", function() {
-        this.style.borderColor = '#374853';
+        if(!isActive){
+            prevElem = this;
+            this.style.borderColor = '#374853';
+            isActive = true;
+        }else{
+            prevElem.style.borderColor = '#deaa86';
+            this.style.borderColor = '#374853';
+            prevElem = this;
+        }
         document.getElementsByClassName("name-of-selected-room")[0].value = this.textContent;
         var roomId = document.getElementsByClassName("name-of-selected-room")[0] = this.id;
         document.getElementsByClassName("name-of-selected-room")[0].id = roomId;
