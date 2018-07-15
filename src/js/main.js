@@ -60,24 +60,27 @@ function showDivs(n) {
     dots[slideId - 1].className += " badge-white";
 }
 
+/*
 try{
     carousel();
 }
 catch (e) {
     console.log(e);
 }
-var slideIndex = 1;
-function carousel() {
+*/
+
+window.addEventListener('load',function carousel() {
+    var slideIndex = 0;
     var i;
     var slide = document.getElementsByClassName("mySlides");
     for (i = 0; i < slide.length; i++) {
         slide[i].style.display = " none";
     }
     slideIndex++;
-    if (slideIndex > slide.length) {slideIndex = 1}
-    slide[slideIndex-1].style.display = "block";
+    if (slideIndex > slide.length) {slideIndex = 0}
+    slide[slideIndex].style.display = "block";
     setTimeout(carousel, 2000);
-}
+});
 
 try{
     showMenu();
@@ -111,6 +114,9 @@ function showSubMenu() {
         showsubMenu.style.display = "none";
     }
 }
+
+
+
 function goToReserv() {
     var adult = document.getElementById('adults').value;
     var child = document.getElementById('children').value;
