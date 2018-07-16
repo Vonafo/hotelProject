@@ -25,8 +25,9 @@
         <div class="universal-room" id="royal-room-3">Royal room</div>
         <div class="universal-room" id="royal-room-4">Royal room</div>
 </div>
-    <form class="booking-form" id='booking-form' name="bookingform" action="">
-        <input type="text" class="name-of-selected-room" name="nameOfRoom"  disabled>
+    <form class="booking-form" id='bookingForm' name="bookingform" action="">
+        <input type="text" class="name-of-selected-room"  name="nameOfRoom" form="bookingForm" value=" " >
+        <input type="text" class="id-of-selected-room"  name="roomid" form="bookingForm" >
         <input type="text"  name='arrivalDay' id="reservation__check-in" value="1 January 2018">
         <input type="text" name = 'departure-day' id="reservation__check-out" value="31 January 2018">
         <select name="quanAdult" id="adults">
@@ -46,7 +47,6 @@
         <textarea name="requirements" id="requirements" rows="8" placeholder="Special requirements"></textarea>
 
         <a class="btn booking-btn" href="#" onclick="bookNow()">book room</a>
-
     </form>
 
 </div>

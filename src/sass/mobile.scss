@@ -26,9 +26,21 @@
   }
 }
 @media screen and (max-width: 768px){
-  #ui-datepicker-div{
+  .deluxe-type-room, .double-type-room, .royal-type-room, .single-type-room{
+    width: 40% !important;
+  }
+  body ,.btn{
+    font-size: 12px;
+  }
+  #ui-datepicker-div ,.adult label, .child label{
+    position: absolute;
     transform:translateX(-50%);
-    left:50%;
+    left:50% !important;
+    top: 0;
+  }
+
+  .forintro , .introduction{
+    min-height: 500px;
   }
   .nav-contacts, .search-form{
     display: none;
@@ -37,8 +49,34 @@
     flex-flow: wrap;
     justify-content: center;
   }
-  .social-items, .aboutpic, .room , .service , .arrivaldate, .departuredate, .adult , .child , .contactinfo , .contactform,.viewofroom ,.photoofserv, .listofserv{
+  .reservetion-form input, .social-items, .aboutpic, .room , .service , .arrivaldate, .departuredate, .adult , .child , .contactinfo , .contactform,.viewofroom ,.photoofserv, .listofserv{
     width: 100%;
+  }
+  .reservetion-form select{
+    width: auto;
+  }
+  .adult , .child{
+    margin-top: 15px;
+    position: relative;
+    padding-top: 20px;
+  }
+  .forintro h1{
+    font-size: 65px;
+  }
+  .fastinfo{
+    text-align: center;
+  }
+  .navbar-logo h3{
+    font-size:25px;
+  }
+  h3{
+    font-size:25px !important;
+  }
+  h2{
+    font-size: 32px!important;
+  }
+  h4{
+    font-size: 14px !important;
   }
   .photoofserv{
     padding-left: 15px;
@@ -83,10 +121,11 @@
   .footercopyright{
     order:4;
   }
-  .subscribe {
-     input{
-       min-width:50%;
-     }
+  .subscribe input[type="text"]{
+    min-width: 50%;
+  }
+  .footersubscription p{
+    width: 50%;
   }
   .subscribesubmit{
     right: 50%;
@@ -95,8 +134,7 @@
     padding: 15px;
   }
 }
-
-@media screen and (max-width: 490px){
+@media screen and (max-width:570px){
   .listofserv__item{
     width: 100%;
     text-align: center;
@@ -108,4 +146,63 @@
   .room figure:hover h3{
     padding-top: 15px;
   }
+}
+@media screen and (max-width: 490px){
+
+  .deluxe-type-room, .double-type-room, .royal-type-room, .single-type-room{
+    min-width: 98% !important;
+  }
+  .name-of-selected-room{
+    font-size: 14px;
+  }
+  .container , .abouttext{
+    padding:10px;
+  }
+  .awards p , .happyguests p , .meals p , .roomcount p{
+    font-size: 45px;
+  }
+  .homeaboutus, .homerooms{
+    min-height: 300px;
+  }
+  .homeaboutus p,.homeaboutus ul, .homeaboutus h1, .homerooms p, .homerooms ul , .homerooms h1{
+    padding-left: 15px;
+  }
+  body {
+    font-size: 10px;
+  }
+  .btn{
+    font-size: 10px;
+    padding: 15px;
+    width: 165px;
+  }
+  .name-room-price span{
+    font-size: 12px;
+  }
+  .infoaboutroom{
+    padding: 10px;
+  }
+  .features{
+    width: 100%;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .room p{
+    margin-bottom: 5px;
+  }
+  .room figure:hover h3{
+    padding-top: 0;
+  }
+  h3{
+    font-size:14px !important;
+  }
+  h2{
+    font-size: 25px!important;
+  }
+  h4{
+    font-size: 12px !important;
+  }
+  .contacts p{
+    padding: 0;
+  }
+
 }
