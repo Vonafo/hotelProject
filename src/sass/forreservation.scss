@@ -6,6 +6,7 @@
   text-align: center;
   width: 100%;
 }
+
 .single-type-room,
 .double-type-room,
 .deluxe-type-room,
@@ -30,6 +31,7 @@
         border-color: #374853;
       }
 }
+_:-ms-lang(x), .royal-type-room { display:block; }
 .universal-room{
   text-transform: uppercase;
   text-align: center;

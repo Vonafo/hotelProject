@@ -1,4 +1,6 @@
-window.onscroll = function() {myFunction()};
+window.onscroll = function () {
+    myFunction()
+};
 var navbar = document.querySelector(".navbar");
 var sticky = navbar.offsetTop;
 
@@ -10,36 +12,32 @@ function myFunction() {
     }
 }
 
-$( function() {
-    $( "#reservation__check-in" ).datepicker({
+$(function () {
+    $("#reservation__check-in").datepicker({
         altField: "#reservation__check-in",
         altFormat: " d MM, yy"
     });
-} );
-$( function() {
-    $( "#reservation__check-out" ).datepicker({
+});
+$(function () {
+    $("#reservation__check-out").datepicker({
         altField: "#reservation__check-out",
         altFormat: " d MM, yy"
     });
-} );
-
-
-
-
-
+});
 
 
 var slideId = 1;
-try{
+try {
     showDivs(slideId);
 }
-catch(err){
-   console.log(err);
+catch (err) {
+    console.log(err);
 }
 
 function currentDiv(n) {
-    showDivs( slideId = n );
+    showDivs(slideId = n);
 }
+
 function showDivs(n) {
     var j;
     var x = document.getElementsByClassName("mySlider");
@@ -60,36 +58,34 @@ function showDivs(n) {
     dots[slideId - 1].className += " badge-white";
 }
 
-/*
-try{
-    carousel();
-}
-catch (e) {
-    console.log(e);
-}
-*/
 
-window.addEventListener('load',function carousel() {
+window.addEventListener('load', function (){
     var slideIndex = 0;
-    var i;
-    var slide = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slide.length; i++) {
-        slide[i].style.display = " none";
+    carousel();
+    function carousel() {
+        var i;
+        var slide = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slide.length; i++) {
+            slide[i].style.display = " none";
+        }
+        slideIndex++;
+        if (slideIndex > slide.length) {
+            slideIndex = 1
+        }
+        slide[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 2000);
     }
-    slideIndex++;
-    if (slideIndex > slide.length) {slideIndex = 0}
-    slide[slideIndex].style.display = "block";
-    setTimeout(carousel, 2000);
 });
 
-try{
+try {
     showMenu();
 }
 catch (err_2) {
     console.log(err_2);
 }
-var showM =  document.getElementById("toggle");
+var showM = document.getElementById("toggle");
 showM.style.display = "none";
+
 function showMenu() {
     if (showM.style.display == "none") {
         showM.style.display = "block";
@@ -98,7 +94,8 @@ function showMenu() {
         showM.style.display = "none";
     }
 }
-try{
+
+try {
     showSubMenu();
 }
 catch (err_3) {
@@ -106,6 +103,7 @@ catch (err_3) {
 }
 var showsubMenu = document.getElementById("toggleSub");
 showsubMenu.style.display = "none";
+
 function showSubMenu() {
     if (showsubMenu.style.display == "none") {
         showsubMenu.style.display = "block";
@@ -116,7 +114,6 @@ function showSubMenu() {
 }
 
 
-
 function goToReserv() {
     var adult = document.getElementById('adults').value;
     var child = document.getElementById('children').value;
@@ -125,66 +122,94 @@ function goToReserv() {
 }
 
 
-window.addEventListener('load',function toInvoke() {
-    if (localStorage.getItem('quan') == 1 ) {
-        document.getElementsByClassName('single-type-room')[0].style.display ="block";
+window.addEventListener('load', function toInvoke() {
+    if (localStorage.getItem('quan') == 1) {
+        document.getElementsByClassName('single-type-room')[0].style.display = "block";
         document.getElementsByClassName('double-type-room')[0].style.display = 'block';
         document.getElementsByClassName('deluxe-type-room')[0].style.display = 'block';
         document.getElementsByClassName('royal-type-room')[0].style.display = 'block';
     }
-    else if(localStorage.getItem('quan') == 2){
+    else if (localStorage.getItem('quan') == 2) {
         document.getElementsByClassName('double-type-room')[0].style.display = 'block';
         document.getElementsByClassName('deluxe-type-room')[0].style.display = 'block';
         document.getElementsByClassName('royal-type-room')[0].style.display = 'block';
     }
-    else if(localStorage.getItem('quan') == 3){
+    else if (localStorage.getItem('quan') == 3) {
         document.getElementsByClassName('deluxe-type-room')[0].style.display = 'block';
         document.getElementsByClassName('royal-type-room')[0].style.display = 'block';
     }
     else {
         document.getElementsByClassName('royal-type-room')[0].style.display = 'block';
     }
-},false);
+}, false);
 
-
-var arr = [];
+ var arrRooms = [document.getElementById('single-room-1'),
+            document.getElementById('single-room-2'),
+            document.getElementById('single-room-3'),
+            document.getElementById('single-room-4'),
+            document.getElementById('double-room-1'),
+            document.getElementById('double-room-2'),
+            document.getElementById('double-room-3'),
+            document.getElementById('double-room-4'),
+            document.getElementById('deluxe-room-1'),
+            document.getElementById('deluxe-room-2'),
+            document.getElementById('deluxe-room-3'),
+            document.getElementById('deluxe-room-4'),
+            document.getElementById('royal-room-1'),
+            document.getElementById('royal-room-2'),
+            document.getElementById('royal-room-3'),
+            document.getElementById('royal-room-4')];
 var isActive = false;
 var prevElem;
 var rooms = document.getElementsByClassName("universal-room");
 for (var i = 0; i < rooms.length; i++) {
-
     var current = rooms[i];
-    current.addEventListener("click", function() {
-        if(!isActive){
+    current.addEventListener("click", function () {
+        if (!isActive) {
             prevElem = this;
             this.style.borderColor = '#374853';
             isActive = true;
-        }else{
+        } else {
             prevElem.style.borderColor = '#deaa86';
             this.style.borderColor = '#374853';
             prevElem = this;
         }
         document.getElementsByClassName("name-of-selected-room")[0].value = this.textContent;
-        var roomId = document.getElementsByClassName("name-of-selected-room")[0] = this.id;
-        document.getElementsByClassName("name-of-selected-room")[0].id = roomId;
+        document.getElementsByClassName('id-of-selected-room')[0].value = this.id;
 
     });
 }
+var arr = [];
+var myForm = document.getElementById('bookingForm');
+
 function bookNow() {
-    var currentRoom = document.getElementsByClassName("name-of-selected-room")[0].id;
-    arr.push(currentRoom);
+    var formData = new FormData(myForm),
+        result = {};
+    for (var entry of formData.entries()) {
+        result[entry[0]] = entry[1];
+    }
+    result = JSON.stringify(result);
+    arr.push(result);
+    let test = localStorage.getItem('info');
+    if (test === null) {
+        arr.push(result);
+    } else {
+        arr.push(localStorage.getItem('info'));
+        arr.push(result);
+    }
     localStorage.setItem('info', arr);
-    console.log(arr);
+    let ln1 = arrRooms.length;
+    for (var i = 0; i < ln1; ++i) {
+        let cache = arrRooms[i];
+        if (cache.id == document.getElementsByClassName('id-of-selected-room')[0].value) {
+            console.log(cache);
+            cache.classList.add('disabled-room');
+              break;
+        }
+    }
+    var newarr=[];
+    var currentRoom = document.getElementsByClassName('id-of-selected-room')[0].value;
+    arr.push(currentRoom);
+    localStorage.setItem('rooms', newarr);
+    console.log(newarr);
 }
-/*window.addEventListener('load',function toBook() {
- }*/
-
-
-
-
-
-
-
-
-
-
